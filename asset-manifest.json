@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/phoenix-reactify/static/css/main.cf51fa8f.chunk.css",
+    "main.js": "/phoenix-reactify/static/js/main.fa71889e.chunk.js",
+    "main.js.map": "/phoenix-reactify/static/js/main.fa71889e.chunk.js.map",
+    "runtime-main.js": "/phoenix-reactify/static/js/runtime-main.705285be.js",
+    "runtime-main.js.map": "/phoenix-reactify/static/js/runtime-main.705285be.js.map",
+    "static/js/2.4382d818.chunk.js": "/phoenix-reactify/static/js/2.4382d818.chunk.js",
+    "static/js/2.4382d818.chunk.js.map": "/phoenix-reactify/static/js/2.4382d818.chunk.js.map",
+    "static/js/3.ffdc2485.chunk.js": "/phoenix-reactify/static/js/3.ffdc2485.chunk.js",
+    "static/js/3.ffdc2485.chunk.js.map": "/phoenix-reactify/static/js/3.ffdc2485.chunk.js.map",
+    "index.html": "/phoenix-reactify/index.html",
+    "static/css/main.cf51fa8f.chunk.css.map": "/phoenix-reactify/static/css/main.cf51fa8f.chunk.css.map",
+    "static/js/2.4382d818.chunk.js.LICENSE.txt": "/phoenix-reactify/static/js/2.4382d818.chunk.js.LICENSE.txt",
+    "static/media/phoenix720.7868a188.mov": "/phoenix-reactify/static/media/phoenix720.7868a188.mov"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.705285be.js",
+    "static/js/2.4382d818.chunk.js",
+    "static/css/main.cf51fa8f.chunk.css",
+    "static/js/main.fa71889e.chunk.js"
+  ]
+}
