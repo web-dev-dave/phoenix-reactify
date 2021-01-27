@@ -16,6 +16,7 @@ function Landing() {
           both physically and mentally. Preparing them for both the unknown and
           the unknowable.
         </p>
+        {/* eslint-disable-next-line */}
         <a href='#'>Click Here For A Free Trial</a>
       </div>
     </>
