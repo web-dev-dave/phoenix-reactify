@@ -4,9 +4,7 @@ import videoSource from '../assets/video/phoenix720.mov';
 function Landing() {
   return (
     <>
-      <video src={videoSource} playsInline muted loop autoPlay></video>
-
-      <div className='overlay'></div>
+      {/* <video src={videoSource} playsInline muted loop autoPlay></video> */}
 
       <div className='text'>
         <h2>Never Stop</h2>
