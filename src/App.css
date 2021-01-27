@@ -168,6 +168,11 @@ header .eight {
   color: #111;
 }
 
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .menu ul li a:hover {
   color: coral;
 }
