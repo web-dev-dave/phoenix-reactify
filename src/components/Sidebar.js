@@ -2,7 +2,7 @@ import React from 'react';
 
 function Sidebar() {
   return (
-    <div class='menu'>
+    <div className='menu'>
       <ul>
         <li>
           {/* eslint-disable-next-line */}

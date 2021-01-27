@@ -1,9 +1,10 @@
 import React from 'react';
+import videoSource from '../assets/video/phoenix720.mov';
 
 function Landing() {
   return (
     <>
-      <video src='phoenix720.mov' playsinline muted loop autoplay></video>
+      <video src={videoSource} playsInline muted loop autoPlay></video>
 
       <div className='overlay'></div>
 

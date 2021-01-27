@@ -2,22 +2,14 @@ import React from 'react';
 
 function Social() {
   return (
-    <ul class='social'>
+    <ul className='social'>
       <li>
-        {/* eslint-disable-next-line */}
-        <a href='#'>
+        <a href='https://www.facebook.com/Phoenixcrossfiteight'>
           <img src='https://i.ibb.co/x7P24fL/facebook.png' alt='' />
         </a>
       </li>
       <li>
-        {/* eslint-disable-next-line */}
-        <a href='#'>
-          <img src='https://i.ibb.co/Wnxq2Nq/twitter.png' alt='' />
-        </a>
-      </li>
-      <li>
-        {/* eslint-disable-next-line */}
-        <a href='#'>
+        <a href='https://www.instagram.com/phoenix_crossfiteight/'>
           <img src='https://i.ibb.co/ySwtH4B/instagram.png' alt='' />
         </a>
       </li>
