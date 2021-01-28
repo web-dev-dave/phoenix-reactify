@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+.no-underline {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -104,7 +108,7 @@ header .eight {
   max-width: 700px;
 }
 
-.text a {
+.text .trial-link {
   display: inline-block;
   font-size: 1em;
   background: coral;
@@ -117,7 +121,7 @@ header .eight {
   transition: 0.2s;
 }
 
-.text a:hover {
+.text .trial-link:hover {
   letter-spacing: 6px;
 }
 

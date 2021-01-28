@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import videoSource from '../assets/video/phoenix720.mov';
 
 function Landing() {
   return (
     <>
-      {/* <video src={videoSource} playsInline muted loop autoPlay></video> */}
+      <video src={videoSource} playsInline muted loop autoPlay></video>
 
       <div className='text'>
         <h2>Never Stop</h2>
@@ -15,8 +16,9 @@ function Landing() {
           both physically and mentally. Preparing them for both the unknown and
           the unknowable.
         </p>
-        {/* eslint-disable-next-line */}
-        <a href='#'>Click Here For A Free Trial</a>
+        <Link to='/trial' className='trial-link'>
+          Click Here For A Free Trial
+        </Link>
       </div>
     </>
   );
