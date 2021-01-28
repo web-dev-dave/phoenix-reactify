@@ -162,18 +162,13 @@ header .eight {
   list-style: none;
 }
 
-.menu ul li a {
+.menu .text-link {
   text-decoration: none;
   font-size: 24px;
   color: #111;
 }
 
-.text-link {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.menu ul li a:hover {
+.menu .text-link:hover {
   color: coral;
 }
 

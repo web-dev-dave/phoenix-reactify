@@ -1,39 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Sidebar() {
+function Sidebar(props) {
+  console.log(props);
   return (
     <div className='menu'>
       <ul>
         <Link to='/about' className='text-link'>
-          <li>
-            {/* eslint-disable-next-line */}
-            <a href='#'>About Us</a>
-          </li>
+          <li>About Us</li>
         </Link>
         <Link to='/membership' className='text-link'>
-          <li>
-            {/* eslint-disable-next-line */}
-            <a href='#'>Membership</a>
-          </li>
+          <li>Membership</li>
         </Link>
         <Link to='/coaches' className='text-link'>
-          <li>
-            {/* eslint-disable-next-line */}
-            <a href='#'>Our Coaches</a>
-          </li>
+          <li>Our Coaches</li>
         </Link>
         <Link to='/timetable' className='text-link'>
-          <li>
-            {/* eslint-disable-next-line */}
-            <a href='#'>Timetable</a>
-          </li>
+          <li>Timetable</li>
         </Link>
         <Link to='/contact' className='text-link'>
-          <li>
-            {/* eslint-disable-next-line */}
-            <a href='#'>Contact Us</a>
-          </li>
+          <li>Contact Us</li>
         </Link>
       </ul>
     </div>

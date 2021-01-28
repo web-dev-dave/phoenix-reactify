@@ -39,7 +39,7 @@ function App() {
           </Switch>
           <Social />
         </section>
-        <Sidebar />
+        <Sidebar changeClass={handleToggle} />
       </div>
     </Router>
   );
