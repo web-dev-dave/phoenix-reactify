@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+/* Special */
 .no-underline {
   text-decoration: none;
 }
 
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Showcase */
 .showcase {
   position: absolute;
   right: 0;
@@ -42,6 +45,30 @@
   justify-content: space-between;
 }
 
+.showcase video {
+  object-fit: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Pricing */
+.membership {
+  height: 400px;
+  background-color: coral;
+  padding: 20px;
+}
+.membership h1 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Header */
 header .logo {
   color: coral;
   text-transform: uppercase;
@@ -54,6 +81,7 @@ header .eight {
   vertical-align: 28%;
 }
 
+/* Menu toggle */
 .toggle {
   position: relative;
   width: 60px;
@@ -72,16 +100,7 @@ header .eight {
   background-position: center;
 }
 
-.showcase video {
-  object-fit: cover;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
+/* Landing page text */
 .text {
   position: relative;
   z-index: 10;
@@ -125,6 +144,7 @@ header .eight {
   letter-spacing: 6px;
 }
 
+/* Social */
 .social {
   position: absolute;
   bottom: 20px;
@@ -150,6 +170,7 @@ header .eight {
   transform: scale(0.7) translateY(-15px);
 }
 
+/* Sidebar menu */
 .menu {
   position: absolute;
   top: 0;
@@ -176,6 +197,7 @@ header .eight {
   color: coral;
 }
 
+/* Media queries */
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .showcase,
