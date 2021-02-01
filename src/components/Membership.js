@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Membership() {
+const Membership = () => {
   return (
     <div className='membership'>
       <h1>Pricing</h1>
@@ -12,6 +12,6 @@ function Membership() {
       </p>
     </div>
   );
-}
+};
 
 export default Membership;

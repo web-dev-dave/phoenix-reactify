@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+// Redux
+import { Provider } from 'react-redux';
+import store from './store';
+
 // Import styling
 import './App.css';
 
@@ -17,7 +21,7 @@ import Coaches from './components/Coaches';
 import Timetable from './components/Timetable';
 import Contact from './components/Contact';
 
-function App() {
+const App = () => {
   const [isActive, setActive] = useState('false');
 
   const handleToggle = () => {
@@ -25,24 +29,26 @@ function App() {
   };
 
   return (
-    <Router>
-      <div className='App'>
-        <section className={`showcase ${!isActive ? 'active' : ''}`}>
-          <Header changeClass={handleToggle} />
-          <Switch>
-            <Route exact path='/' component={Landing} />
-            <Route path='/about' component={About} />
-            <Route path='/membership' component={Membership} />
-            <Route path='/coaches' component={Coaches} />
-            <Route path='/timetable' component={Timetable} />
-            <Route path='/contact' component={Contact} />
-          </Switch>
-          <Social />
-        </section>
-        <Sidebar changeClass={handleToggle} />
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <div className='App'>
+          <section className={`showcase ${!isActive ? 'active' : ''}`}>
+            <Header changeClass={handleToggle} />
+            <Switch>
+              <Route exact path='/' component={Landing} />
+              <Route path='/about' component={About} />
+              <Route path='/membership' component={Membership} />
+              <Route path='/coaches' component={Coaches} />
+              <Route path='/timetable' component={Timetable} />
+              <Route path='/contact' component={Contact} />
+            </Switch>
+            <Social />
+          </section>
+          <Sidebar changeClass={handleToggle} />
+        </div>
+      </Router>
+    </Provider>
   );
-}
+};
 
 export default App;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Coaches() {
+const Coaches = () => {
   return (
     <>
       <h1>Coaches Page</h1>
     </>
   );
-}
+};
 
 export default Coaches;

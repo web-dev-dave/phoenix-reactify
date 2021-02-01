@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Header(props) {
+const Header = ({ changeClass }) => {
   const [isActive, setActive] = useState('false');
 
   const handleToggle = () => {
-    props.changeClass();
+    changeClass();
     setActive(!isActive);
   };
 
@@ -22,6 +22,6 @@ function Header(props) {
       ></div>
     </header>
   );
-}
+};
 
 export default Header;

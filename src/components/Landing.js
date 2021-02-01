@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import videoSource from '../assets/video/phoenix720.mov';
 
-function Landing() {
+const Landing = () => {
   return (
     <>
       <video src={videoSource} playsInline muted loop autoPlay></video>
@@ -22,6 +22,6 @@ function Landing() {
       </div>
     </>
   );
-}
+};
 
 export default Landing;

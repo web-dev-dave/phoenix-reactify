@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Social() {
+const Social = () => {
   return (
     <ul className='social'>
       <li>
@@ -15,6 +15,6 @@ function Social() {
       </li>
     </ul>
   );
-}
+};
 
 export default Social;
