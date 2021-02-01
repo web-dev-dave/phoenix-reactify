@@ -1,4 +1,4 @@
-import { SET_TOGGLE } from '../actions/types';
+import { REMOVE_TOGGLE, SET_TOGGLE } from '../actions/types';
 
 const initalState = [];
 
@@ -12,8 +12,10 @@ export default function (state = initalState, action) {
         ...state,
         payload.isActive
           ? (payload.className = 'active')
-          : (payload.className = '')
+          : (payload.className = 'toggle')
       ];
+    case REMOVE_TOGGLE:
+      return state.filter(item => item.className === 'active');
     default:
       return state;
   }

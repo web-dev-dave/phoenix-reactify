@@ -2,15 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Actions
-import { setToggle } from '../actions/toggle';
+import { removeToggle } from '../actions/toggle';
 
 // Redux
 import { connect } from 'react-redux';
 
-const Sidebar = ({ setToggle }) => {
+const Sidebar = ({ removeToggle }) => {
   const toggleClass = async e => {
-    e.preventDefault();
-    setToggle(true, '');
+    removeToggle();
   };
 
   return (
@@ -36,4 +35,4 @@ const Sidebar = ({ setToggle }) => {
   );
 };
 
-export default connect(null, { setToggle })(Sidebar);
+export default connect(null, { removeToggle })(Sidebar);
