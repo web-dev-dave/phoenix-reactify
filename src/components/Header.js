@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = ({ changeClass }) => {
-  const [isActive, setActive] = useState('false');
+// Actions
+import { setToggle } from '../actions/toggle';
 
-  const handleToggle = () => {
-    changeClass();
-    setActive(!isActive);
+// Redux
+import { connect } from 'react-redux';
+
+const Header = ({ toggle, setToggle }) => {
+  const toggleClass = async () => {
+    setToggle(true, '');
   };
 
+  console.log(toggle);
   return (
     <header>
       <Link to='/' className='no-underline'>
@@ -17,11 +21,15 @@ const Header = ({ changeClass }) => {
         </h2>
       </Link>
       <div
-        onClick={handleToggle}
-        className={`toggle ${!isActive ? 'active' : ''}`}
+        onClick={toggleClass}
+        className={`toggle ${toggle}` || `toggle`}
       ></div>
     </header>
   );
 };
 
-export default Header;
+const mapStateToProps = state => ({
+  toggle: state.toggle
+});
+
+export default connect(mapStateToProps, { setToggle })(Header);

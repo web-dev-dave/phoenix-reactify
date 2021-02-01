@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Redux
-import { Provider } from 'react-redux';
-import store from './store';
+import { connect } from 'react-redux';
 
 // Import styling
 import './App.css';
@@ -21,34 +20,36 @@ import Coaches from './components/Coaches';
 import Timetable from './components/Timetable';
 import Contact from './components/Contact';
 
-const App = () => {
-  const [isActive, setActive] = useState('false');
+const App = ({ toggle }) => {
+  // const [isActive, setActive] = useState('false');
 
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
+  // const handleToggle = () => {
+  //   setActive(!isActive);
+  // };
 
   return (
-    <Provider store={store}>
-      <Router>
-        <div className='App'>
-          <section className={`showcase ${!isActive ? 'active' : ''}`}>
-            <Header changeClass={handleToggle} />
-            <Switch>
-              <Route exact path='/' component={Landing} />
-              <Route path='/about' component={About} />
-              <Route path='/membership' component={Membership} />
-              <Route path='/coaches' component={Coaches} />
-              <Route path='/timetable' component={Timetable} />
-              <Route path='/contact' component={Contact} />
-            </Switch>
-            <Social />
-          </section>
-          <Sidebar changeClass={handleToggle} />
-        </div>
-      </Router>
-    </Provider>
+    <Router>
+      <div className='App'>
+        <section className={`showcase ${toggle}` || 'showcase'}>
+          <Header />
+          <Switch>
+            <Route exact path='/' component={Landing} />
+            <Route path='/about' component={About} />
+            <Route path='/membership' component={Membership} />
+            <Route path='/coaches' component={Coaches} />
+            <Route path='/timetable' component={Timetable} />
+            <Route path='/contact' component={Contact} />
+          </Switch>
+          <Social />
+        </section>
+        <Sidebar />
+      </div>
+    </Router>
   );
 };
 
-export default App;
+const mapStateToProps = state => ({
+  toggle: state.toggle
+});
+
+export default connect(mapStateToProps)(App);

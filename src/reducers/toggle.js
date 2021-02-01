@@ -8,7 +8,12 @@ export default function (state = initalState, action) {
 
   switch (type) {
     case SET_TOGGLE:
-      return [...state, payload];
+      return [
+        ...state,
+        payload.isActive
+          ? (payload.className = 'active')
+          : (payload.className = '')
+      ];
     default:
       return state;
   }
