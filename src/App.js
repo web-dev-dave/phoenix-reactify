@@ -21,12 +21,6 @@ import Timetable from './components/Timetable';
 import Contact from './components/Contact';
 
 const App = ({ toggle }) => {
-  // const [isActive, setActive] = useState('false');
-
-  // const handleToggle = () => {
-  //   setActive(!isActive);
-  // };
-
   return (
     <Router>
       <div className='App'>
