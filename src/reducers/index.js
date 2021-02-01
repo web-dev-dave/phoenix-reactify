@@ -1,3 +1,8 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({});
+// Reducers
+import toggle from './toggle';
+
+export default combineReducers({
+  toggle
+});

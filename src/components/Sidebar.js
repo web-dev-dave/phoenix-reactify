@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Actions
+import { setToggle } from '../actions/toggle';
+
+// Redux
+import { connect } from 'react-redux';
+
 const Sidebar = ({ changeClass }) => {
   return (
     <div className='menu'>
@@ -25,4 +31,4 @@ const Sidebar = ({ changeClass }) => {
   );
 };
 
-export default Sidebar;
+export default connect(null, { setToggle })(Sidebar);

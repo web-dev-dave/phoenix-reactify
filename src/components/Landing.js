@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import videoSource from '../assets/video/phoenix720.mov';
+// import videoSource from '../assets/video/phoenix720.mov';
 
 const Landing = () => {
   return (
     <>
-      <video src={videoSource} playsInline muted loop autoPlay></video>
+      {/* <video src={videoSource} playsInline muted loop autoPlay></video> */}
 
       <div className='text'>
         <h2>Never Stop</h2>

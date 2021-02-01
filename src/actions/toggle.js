@@ -1,4 +1,4 @@
-import SET_TOGGLE from './types';
+import { SET_TOGGLE } from './types';
 
 export const setToggle = (isActive, className) => dispatch => {
   dispatch({
