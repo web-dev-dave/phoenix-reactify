@@ -8,6 +8,7 @@ import { setToggle, removeToggle } from '../actions/toggle';
 import { connect } from 'react-redux';
 
 const Header = ({ toggle, setToggle, removeToggle }) => {
+  // Handle class toggle
   const toggleClass = async e => {
     if (e.target.className.length === 7) {
       setToggle(true);
@@ -19,7 +20,7 @@ const Header = ({ toggle, setToggle, removeToggle }) => {
   };
 
   return (
-    <header>
+    <header className='sticky'>
       <Link to='/' className='no-underline'>
         <h2 className='logo'>
           Phoenix CrossFit <span className='eight'>Eight</span>

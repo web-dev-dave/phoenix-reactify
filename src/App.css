@@ -13,6 +13,29 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.fullscreen {
+  object-fit: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 50%;
+  background-color: coral;
+  border: 1px black solid;
+  padding: 2%;
+  width: 100vw;
+  margin: 0 auto;
+  /* font-size: large; */
+}
+
 /* Showcase */
 .showcase {
   position: absolute;
@@ -25,7 +48,7 @@
   align-items: center;
   background: #111;
   color: #fff;
-  transition: 0.5s;
+  transition: 0.8s;
   z-index: 2;
 }
 
@@ -53,19 +76,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-/* Pricing */
-.membership {
-  height: 400px;
-  background-color: coral;
-  padding: 20px;
-}
-.membership h1 {
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 /* Header */
@@ -142,6 +152,53 @@ header .eight {
 
 .text .trial-link:hover {
   letter-spacing: 6px;
+}
+
+/* Membership */
+.membership {
+  position: absolute;
+  right: 0;
+  width: 65%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: coral;
+  color: #fff;
+  z-index: 2;
+}
+
+.membership img {
+  object-fit: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.membership .text {
+  color: #111;
+}
+
+/* testamonials */
+.testamonials {
+  position: absolute;
+  left: 0;
+  width: 35%;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.testamonials p {
+  font-size: 1.5em;
 }
 
 /* Social */

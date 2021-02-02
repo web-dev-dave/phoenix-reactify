@@ -3,7 +3,7 @@ import React from 'react';
 const Timetable = () => {
   return (
     <>
-      <h1>Timetable Page</h1>
+      <h1>Timetable</h1>
     </>
   );
 };
