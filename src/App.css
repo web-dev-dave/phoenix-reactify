@@ -155,20 +155,48 @@ header .eight {
 }
 
 /* Membership */
+
 .container {
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
-}
-
-.container div {
-  border: 1px #ccc solid;
-  padding: 10px;
-  margin: 10px;
+  position: relative;
+  text-align: center;
 }
 
 .container .box {
-  flex-basis: 15%;
+  border: 1px #ccc solid;
+  padding: 10px;
+  margin: 10px;
+  /* flex-basis: 15%; */
+  /* height: 400px; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* align-self: center; */
+}
+
+.price-wrap span {
+  font-size: 0.7em;
+}
+
+.container .price-wrap {
+  border: 1px #ccc solid;
+  padding: 10px;
+  margin: 10px;
+  /* flex-basis: 15%; */
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* flex: 1; */
+  /* justify-content: flex-end; */
+}
+
+.container .box p {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 /* testamonials */
 
