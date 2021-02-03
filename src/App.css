@@ -198,6 +198,26 @@ header .eight {
   display: flex;
   align-items: center;
 }
+
+.join-link {
+  position: absolute;
+  display: block;
+  font-size: 1em;
+  background: coral;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  /* margin-top: 10px; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  bottom: 20px;
+  right: 0;
+}
+
+.join-link:hover {
+  letter-spacing: 6px;
+}
 /* testamonials */
 
 .border {

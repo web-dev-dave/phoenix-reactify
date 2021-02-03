@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Membership = () => {
   return (
@@ -59,6 +60,11 @@ const Membership = () => {
             </h1>
           </div>
         </div>
+      </div>
+      <div>
+        <Link to='/trial' className='join-link'>
+          Click Here To Join Now!
+        </Link>
       </div>
     </>
   );
