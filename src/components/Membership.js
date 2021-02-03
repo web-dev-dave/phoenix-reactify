@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import barbell from '../assets/img/barbell.jpg';
+
 const Membership = () => {
   return (
     <>
+      <img className='image' src={barbell} alt='' />
       <div className='container'>
         <div className='box'>
           <h3>3 x Classes Per Week</h3>
